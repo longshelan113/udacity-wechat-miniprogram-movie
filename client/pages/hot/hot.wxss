@@ -1,0 +1,33 @@
+/* pages/hot/hot.wxss */
+.favFilms{
+  padding-top: 10rpx;
+}
+.favFilms-option{
+  margin: 40rpx 50rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}
+.option-image{
+  width: 200rpx;
+}
+.option-content{
+  /* border: solid 1rpx gainsboro; */
+  height: 230rpx;
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+.option-title{
+  margin-top: 30rpx;
+  font-size: 35rpx;
+  line-height: 49rpx;
+  font-weight: bold;
+}
+.option-category{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  margin: 40rpx 0;
+}

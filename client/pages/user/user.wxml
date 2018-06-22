@@ -1,0 +1,25 @@
+<!--pages/user/user.wxml-->
+<view class='wrapper'>
+  <view class='content'>
+    <view class='title'>收藏的影评 v</view>
+    <view class='favComms'>
+      <view class='favComms-option' wx:for="{{favCommsList}}" wx:key="id">
+        <image class='option-filmImage' src='{{item.filmImage}}' mode='widthFix'></image>
+        <view class='option-content'>
+          <view class='option-title'>{{item.filmTitle}}</view>
+          <view class='option-comm'>{{item.comment}}</view>
+          <view class='option-user'>
+            <image class='option-userImage' src='/images/userImage.png' mode='widthFix'></image>
+            <view class='option-userName'>{{item.userName}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='footer-option' bindtap='goToHome'>
+    <view class='hotfilm-text'>返回首页</view>
+  </view>
+</view>

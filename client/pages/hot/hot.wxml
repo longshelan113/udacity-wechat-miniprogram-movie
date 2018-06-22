@@ -1,0 +1,16 @@
+<!--pages/hot/hot.wxml-->
+<view class='wrapper'>
+    <view class='favFilms'>
+
+      <navigator class='favFilms-option' wx:for="{{favFilmList}}" wx:key="id" 
+                 url='/pages/detail/detail?id={{item.id}}'> 
+        <image class='option-image' src='{{item.image}}' mode='widthFix'></image> 
+
+        <view class='option-content'> 
+          <view class='option-title'>{{item.title}}</view> 
+          <view class='option-category'>{{item.category}}</view>
+        </view> 
+      </navigator> 
+
+   </view> 
+</view>

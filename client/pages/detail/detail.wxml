@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<view class='wrapper'>
+  
+  <view class='film-card'>
+    <image class='film-img' src='{{film.image}}' mode='widthFix'></image>
+
+    <view class='film-content'>
+      <view class='film-text'>
+        <view class='film-title'>
+          {{film.title}}
+        </view>
+        <view class='film-des'>
+          {{film.description}}
+        </view>
+      </view>
+
+      <view class='btn-group'>
+        <navigator class='btn-option'>
+           <image class='watchComm-img' src='/images/watch.png'></image> 
+          <view>查看影评</view>
+        </navigator>
+
+        <view class='btn-option' bindtap='addCommentAction'>
+          <image class='addComm-img' src='/images/comment.png'></image> 
+          <view>添加影评</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

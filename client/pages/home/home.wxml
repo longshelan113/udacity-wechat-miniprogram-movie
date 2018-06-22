@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<view class='wrapper'>
+  <navigator class='content' url='/pages/detail/detail?id={{filmList[0].id}}'>
+    <image class='film-img' src='{{filmList[0].image}}' mode='widthFix'></image> 
+    
+    <view class='film-title'>
+      {{filmList[0].title}}
+    </view>
+  </navigator>
+
+  <navigator class='user-part' url='/pages/comment/comment'>
+    <image class='userImage' src='/images/userImage.png' mode='widthFix'></image>
+    <view class='userName'>徐妍给你推荐了一部电影</view>
+  </navigator>
+</view>
+
+<view class='footer'>
+  <navigator class='footer-option' url='/pages/hot/hot'>
+    <image class='hotfilm-img' src='/images/hot.png'></image>
+    <view class='hotfilm-text'>热门</view>
+  </navigator>
+  <navigator class='footer-option' url='/pages/user/user'>
+    <image class='myfilm-img' src='/images/user.png'></image>
+    <view class='myfilm-text'>我的</view>
+  </navigator>
+</view>
