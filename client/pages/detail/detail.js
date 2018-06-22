@@ -65,19 +65,19 @@ Page({
     })
   },
 
-  // chooseWxImage: function (type) {
-  //   var that = this;
-  //   wx.chooseImage({
-  //     sizeType: ['original', 'compressed'],
-  //     sourceType: [type],
-  //     success: function (res) {
-  //       console.log(res);
-  //       that.setData({
-  //         tempFilePaths: res.tempFilePaths[0],
-  //       })
-  //     }
-  //   })
-  // },
+  chooseWxImage: function (type) {
+    var that = this;
+    wx.chooseImage({
+      sizeType: ['original', 'compressed'],
+      sourceType: [type],
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          tempFilePaths: res.tempFilePaths[0],
+        })
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
