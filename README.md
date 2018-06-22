@@ -18,7 +18,6 @@
   * 影评预览页：预览已编辑完成的影评。
   * 个人中心页：展示用户已收藏和已发布的影评列表。
 * 交互图如下（点击[此处](http://suo.im/4zJXjp)在新标签页打开大图）：
-![](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd666/%E7%9C%8B%E7%9C%8B%E4%BE%83%E4%BE%83%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/%E4%BA%A4%E4%BA%92%E5%9B%BE2.png)
 
 ### 示例
 * [首页](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd666/%E7%9C%8B%E7%9C%8B%E4%BE%83%E4%BE%83%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/%E9%A6%96%E9%A1%B5.jpg)
