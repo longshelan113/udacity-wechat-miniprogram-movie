@@ -12,6 +12,7 @@ Page({
       filmTitle: '复仇者联盟3：无限战争',
       userId: 1,
       userName: '徐妍',
+      avatar: '/images/userImage.png',
       comment: ''
     },{
       id: 2,
@@ -20,13 +21,14 @@ Page({
       filmTitle: '复仇者联盟3：无限战争',
       userId: 2,
       userName: '培松',
+      avatar: '/images/userImage.png',
       comment: '比一个科技领先全世界n年的国家，堪比黑科技般...'
     }]
   },
 
   goToHome(){
     wx.navigateBack({
-      url: '/pages/home/home',
+        delta: 1
     })
   },
 

@@ -15,7 +15,7 @@
       </view>
 
       <view class='btn-group'>
-        <navigator class='btn-option'>
+        <navigator class='btn-option' url='/pages/comment/comment'>
            <image class='watchComm-img' src='/images/watch.png'></image> 
           <view>查看影评</view>
         </navigator>

@@ -1,1 +1,36 @@
 /* pages/comment/comment.wxss */
+.comment-list{
+  margin-top: 50rpx;
+}
+.comment-option{
+  padding: 20rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-bottom: solid 1rpx gainsboro;
+}
+.comment-option:last-child{
+  border-bottom: none;
+}
+.option-user{
+  display: flex;
+  flex-direction: row;
+}
+.option-image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.option-userName{
+  margin: 20rpx 30rpx;
+  font-size: 35rpx;
+  line-height: 49rpx;
+}
+.option-content{
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+}

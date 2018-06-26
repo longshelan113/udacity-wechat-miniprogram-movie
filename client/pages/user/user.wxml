@@ -9,7 +9,7 @@
           <view class='option-title'>{{item.filmTitle}}</view>
           <view class='option-comm'>{{item.comment}}</view>
           <view class='option-user'>
-            <image class='option-userImage' src='/images/userImage.png' mode='widthFix'></image>
+            <image class='option-userImage' src='{{item.avatar}}' mode='widthFix'></image>
             <view class='option-userName'>{{item.userName}}</view>
           </view>
         </view>

@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    commentList: [{
+      userName: '徐妍',
+      avatar: '/images/userImage.png',
+      content: ''
+    }, {
+      userName: '培松',
+      avatar: '/images/userImage.png',
+      content: '比一个科技领先全世界n年的国家，堪比黑科技般...'
+      }, {
+        userName: '培松',
+        avatar: '/images/userImage.png',
+        content: '比一个科技领先全世界n年的国家，堪比黑科技般...'
+      }]// 评论列表
+  },
+
+  goToHome() {
+    wx.navigateBack({
+      delta:4
+    })
   },
 
   /**

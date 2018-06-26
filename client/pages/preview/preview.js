@@ -68,6 +68,18 @@ Page({
     })
   },
 
+  goBackToEdit() {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+
+  pubCommAction() {
+    wx.navigateTo({
+      url: '/pages/comment/comment',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -50,6 +50,12 @@
 					"name": "编辑影评",
 					"pathName": "pages/add-comment/add-comment",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "影评列表",
+					"pathName": "pages/comment/comment",
+					"query": ""
 				}
 			]
 		}
