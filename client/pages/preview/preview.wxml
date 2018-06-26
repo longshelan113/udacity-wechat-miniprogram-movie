@@ -1,0 +1,30 @@
+<!--pages/preview/preview.wxml-->
+<view class='wrapper'>
+  
+  <view class='film-card'>
+    <image class='film-img' src='{{film.image}}' mode='widthFix'></image>
+
+    <view class='film-content'>
+      <view class='film-text'>
+        <view class='film-title'>
+          {{film.title}}
+        </view>
+
+        <view class='film-comment-add'>
+          <view class='word-add' wx:if="{{commentValue}}">{{commentValue}}</view>
+
+          <view class='recorder-add' bindtap="goToPlay" data-key="{{voice}}" wx:if='{{voice}}'>
+            <image class='recorder-add-img' src='/images/recording.png'></image> 
+            <view class='recorder-add-text'>点击播放</view>
+          </view>
+        </view>
+      </view>     
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='footer-option comment-complete' bindtap='goToPreview'>
+    <view class='comment-complete-text'>完成</view>
+  </view>
+</view>

@@ -1,0 +1,99 @@
+/* pages/preview/preview.wxss */
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+}
+
+.film-img{
+  position: absolute;
+  width: 250rpx;
+  height: 250rpx;
+  margin-top: 40rpx;
+  z-index: 2;
+  border: solid 1rpx gainsboro;
+}
+
+.film-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 110rpx 30rpx 52rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx; 
+  border: solid 1rpx gainsboro;
+}
+
+.film-text{
+  padding: 300rpx 90rpx 0;
+}
+
+.film-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 38rpx;
+  line-height: 53rpx;
+}
+
+.film-comment-add{
+  margin-top: 50rpx;
+  font-size: 35rpx;
+  line-height: 49rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-add{
+  width: 400rpx;
+  height: 300rpx;
+  text-align: center;
+}
+
+.recorder-add{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50rpx 0;
+  padding: 20rpx 0; 
+  width: 200rpx;
+  border-radius: 13rpx;
+  border: solid 1rpx gainsboro;
+
+  font-size: 35rpx;
+  line-height: 49rpx;
+  color: gray;
+  background-color: #fff;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}
+
+.recorder-add-img{
+  margin-right: 10rpx; 
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.comment-complete{
+  background-color: rgb(0, 189, 0); 
+  border: solid 1px rgb(0, 189, 0);
+  color: #34373D;
+}
+.comment-complete.dis {
+  color: rgba(52, 55, 61, 0.5);
+  border: solid 1px #fff;
+  background-color: #fff;
+}
