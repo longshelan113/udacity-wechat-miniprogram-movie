@@ -9,17 +9,19 @@
         <view class='film-title'>
           {{film.title}}
         </view>
-
-        <view class='film-comment-add'>
-          <textarea class='word-add' placeholder='输入你的影评内容' maxlength='255' 
+        <view class='film-comment'>
+          <textarea class='word-add' placeholder='输入你的影评内容' maxlength='255'
                     bindinput='onInput'></textarea>
-
-          <view class='recorder-add' bindtouchstart='startRecordOnTap' bindtouchend='stopRecordOnTap'>
-            <image class='recorder-add-img' src='/images/recording.png'></image> 
-            <view class='recorder-add-text'>录音</view>
-          </view>
         </view>
-      </view>     
+      </view>
+
+      <view class='btn-group'>
+        <view class='btn-option' bindtouchstart='startRecordOnTap' bindtouchend='stopRecordOnTap'>
+          <image class='recorder-add-img' src='/images/recording.png'></image>
+          <view class='recorder-add-text'>录音</view>
+        </view>
+      </view>
+
     </view>
   </view>
 </view>

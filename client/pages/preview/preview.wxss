@@ -46,7 +46,7 @@
   line-height: 53rpx;
 }
 
-.film-comment-add{
+.film-comment{
   margin-top: 50rpx;
   font-size: 35rpx;
   line-height: 49rpx;
@@ -87,13 +87,31 @@
   height: 40rpx;
 }
 
-.comment-complete{
-  background-color: rgb(0, 189, 0); 
-  border: solid 1px rgb(0, 189, 0);
-  color: #34373D;
+.btn-group{
+  width: 690rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.comment-complete.dis {
-  color: rgba(52, 55, 61, 0.5);
-  border: solid 1px #fff;
+
+.btn-option{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 150rpx 20rpx 50rpx;
+  padding: 20rpx 50rpx;
+  border-radius: 13rpx;
+  border: solid 1rpx gainsboro;
+
+  font-size: 35rpx;
+  line-height: 49rpx;
+  color: gray;
   background-color: #fff;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}
+
+.btn-option image{
+  margin-right: 10rpx; 
+  width: 40rpx;
+  height: 40rpx;
 }

@@ -9,8 +9,7 @@
         <view class='film-title'>
           {{film.title}}
         </view>
-
-        <view class='film-comment-add'>
+        <view class='film-comment'>
           <view class='word-add' wx:if="{{commentValue}}">{{commentValue}}</view>
 
           <view class='recorder-add' bindtap="goToPlay" data-key="{{voice}}" wx:if='{{voice}}'>
@@ -18,13 +17,20 @@
             <view class='recorder-add-text'>点击播放</view>
           </view>
         </view>
-      </view>     
-    </view>
-  </view>
-</view>
+      </view>
 
-<view class='footer'>
-  <view class='footer-option comment-complete' bindtap='goToPreview'>
-    <view class='comment-complete-text'>完成</view>
+        <view class='btn-group'>
+          <navigator class='btn-option'>
+            <image class='watchComm-img' src='/images/watch.png'></image> 
+            <view>查看影评</view>
+          </navigator>
+
+          <view class='btn-option' bindtap='addCommentAction' data-id='{{film.id}}'>
+            <image class='addComm-img' src='/images/comment.png'></image> 
+            <view>添加影评</view>
+          </view>
+        </view>
+
+    </view>
   </view>
 </view>
