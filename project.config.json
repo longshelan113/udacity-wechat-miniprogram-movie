@@ -44,6 +44,12 @@
 					"name": "热门电影",
 					"pathName": "pages/hot/hot",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑影评",
+					"pathName": "pages/add-comment/add-comment",
+					"query": ""
 				}
 			]
 		}

@@ -1,2 +1,32 @@
 <!--pages/add-comment/add-comment.wxml-->
-<text>pages/add-comment/add-comment.wxml</text>
+<view class='wrapper'>
+  
+  <view class='film-card'>
+    <image class='film-img' src='{{film.image}}' mode='widthFix'></image>
+
+    <view class='film-content'>
+      <view class='film-text'>
+        <view class='film-title'>
+          {{film.title}}
+        </view>
+
+        <view class='film-comment-add'>
+          <textarea class='word-add' placeholder='输入你的影评内容' maxlength='255' 
+                    bindinput='onInput'></textarea>
+
+          <view class='recorder-add' bindtouchstart='startRecordOnTap' bindtouchend='stopRecordOnTap'>
+            <image class='recorder-add-img' src='/images/recording.png'></image> 
+            <view class='recorder-add-text'>录音</view>
+          </view>
+        </view>
+      </view>     
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='footer-option comment-complete {{!commentValue&&!voice ? "dis" : ""}}' bindtap='goToPreview'>
+    <view class='comment-complete-text'>完成</view>
+  </view>
+</view>
+

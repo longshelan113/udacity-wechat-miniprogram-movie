@@ -8,7 +8,7 @@ Page({
     favCommsList:[{
       id: 1,
       filmId: 1,
-      filmImage: '/images/p2517753454.webp',
+      filmImage: '/images/p2517753454.png',
       filmTitle: '复仇者联盟3：无限战争',
       userId: 1,
       userName: '徐妍',
@@ -16,7 +16,7 @@ Page({
     },{
       id: 2,
       filmId: 1,
-      filmImage: '/images/p2517753454.webp',
+      filmImage: '/images/p2517753454.png',
       filmTitle: '复仇者联盟3：无限战争',
       userId: 2,
       userName: '培松',

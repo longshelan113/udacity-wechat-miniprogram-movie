@@ -16,3 +16,18 @@
   width: 750rpx;
   background-color: #fff;
 }
+
+.footer-option{
+  text-align: center;
+  width: 750rpx; 
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+
+  font-size: 35rpx;
+  line-height: 49rpx;
+  color: gray;
+}

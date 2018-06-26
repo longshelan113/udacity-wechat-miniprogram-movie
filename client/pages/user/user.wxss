@@ -1,19 +1,4 @@
 /* pages/user/user.wxss */
-.footer-option{
-  text-align: center;
-  width: 750rpx; 
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100rpx;
-
-  font-size: 35rpx;
-  line-height: 49rpx;
-  color: gray;
-}
-
 .content{
   padding-top: 40rpx;
 }
@@ -38,6 +23,7 @@
 }
 .option-filmImage{
   width: 200rpx;
+  height: 230rpx;
 }
 .option-content{
   /* border: solid 1rpx gainsboro; */

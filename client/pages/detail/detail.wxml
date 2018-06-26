@@ -20,7 +20,7 @@
           <view>查看影评</view>
         </navigator>
 
-        <view class='btn-option' bindtap='addCommentAction'>
+        <view class='btn-option' bindtap='addCommentAction' data-id='{{film.id}}'>
           <image class='addComm-img' src='/images/comment.png'></image> 
           <view>添加影评</view>
         </view>

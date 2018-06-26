@@ -45,36 +45,21 @@ Page({
     })
   },
 
-  addCommentAction: function () {
-    var that = this;
+  addCommentAction: function (event) {
     wx.showActionSheet({
       itemList: ['文字', '语音'],
       success: function (res) {
-        console.log(res.tapIndex)
         if(!res.cancel){
-          if (res.tapIndex == 0) {
-            that.chooseWxImage('album')
-          } else if (res.tapIndex == 1) {
-            that.chooseWxImage('camera')
-          }
+          let id = event.currentTarget.dataset.id
+          let title = event.currentTarget.dataset.title
+          let image = event.currentTarget.dataset.image
+          wx.navigateTo({
+            url: `/pages/add-comment/add-comment?id=${id}`,
+          })
         }
       },
       fail: function (res) {
         console.log(res.errMsg)
-      }
-    })
-  },
-
-  chooseWxImage: function (type) {
-    var that = this;
-    wx.chooseImage({
-      sizeType: ['original', 'compressed'],
-      sourceType: [type],
-      success: function (res) {
-        console.log(res);
-        that.setData({
-          tempFilePaths: res.tempFilePaths[0],
-        })
       }
     })
   },
